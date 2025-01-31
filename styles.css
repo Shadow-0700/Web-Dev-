@@ -61,3 +61,44 @@ ul a:hover{
     color: black;
     margin-top: 3.5rem;
 }
+
+.background {
+    background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.7)), url('img/pexels-teddy-2263436.jpg'); /* Replace with your image URL */
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    height: 100vh; /* 35% of the viewport height */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.text{
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 5rem; /* Adjust size as needed */
+    font-weight: bold;
+    font-family: "Sour Gummy", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-variation-settings: "width" 100;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7), -2px -2px 4px rgba(0, 0, 0, 0.7),
+                2px -2px 4px rgba(0, 0, 0, 0.7), -2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.blue-text{
+    color: rgb(58, 195, 249);
+    text-shadow:2px 2px 4px rgba(0, 0, 0, 0.7), -2px -2px 4px rgba(0, 0, 0, 0.7),
+    2px -2px 4px rgba(0, 0, 0, 0.7), -2px 2px 4px rgba(0, 0, 0, 0.7), 0 0 1px rgb(58, 195, 249), 0 0 20px rgb(58, 195, 249), 0 0 80px rgb(62, 199, 253);
+    -webkit-text-stroke:  #000;
+}
+.yellow-text{
+    color: rgb(232, 181, 85);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7), -2px -2px 4px rgba(0, 0, 0, 0.7),
+    2px -2px 4px rgba(0, 0, 0, 0.7), -2px 2px 4px rgba(0, 0, 0, 0.7), 0 0 1px rgb(232, 181, 85), 0 0 20px rgb(232, 181, 85), 0 0 80px rgb(232, 181, 85);
+}
