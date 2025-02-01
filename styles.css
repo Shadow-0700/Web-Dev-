@@ -7,6 +7,7 @@
 }
 
 header{
+    font-family: monospace;
     display: flex;
     align-items: center;
     width: 100%;
@@ -157,4 +158,10 @@ a{
 }
 a:hover{
     text-decoration: underline;
+}
+
+.typeWriter{
+    text-align: center;
+    font-size: 3rem;
+    color: skyblue;
 }

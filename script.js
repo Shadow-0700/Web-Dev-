@@ -23,3 +23,36 @@ function showPage(page) {
         selectedPage.style.display = 'block';
     }
 }
+
+
+/* type-writer effect */
+document.addEventListener("DOMContentLoaded", () => {
+    const elements = document.querySelectorAll(".typeWriter");
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const textElement = entry.target;
+                const text = textElement.getAttribute("data-text");
+                typeEffect(textElement, text);
+                observer.unobserve(textElement); // Stop observing after animation
+            }
+        });
+    }, { threshold: 0.5 });
+
+    elements.forEach(element => observer.observe(element));
+});
+
+function typeEffect(element, text) {
+    let index = 0;
+    function type() {
+        if (index < text.length) {
+            element.textContent += text[index];
+            index++;
+            setTimeout(type, 100);
+        } else {
+            element.style.borderRight = "none";
+        }
+    }
+    type();
+}
