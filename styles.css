@@ -165,3 +165,54 @@ a:hover{
     font-size: 3rem;
     color: skyblue;
 }
+
+/* ***************************CONTACT-PAGE******************** */
+.contact_background {
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0, 0, 0, 0.598)), url('img/wood-1759566_1280.jpg'); /* Replace with your image URL */
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(51, 51, 51, 0.315);
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    border-color: #0078d7;
+    outline: none;
+    box-shadow: 0 0 20px rgba(0, 118, 215, 0.685);
+}
+
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
+    background-color: skyblue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: rgb(63, 170, 212);
+}
