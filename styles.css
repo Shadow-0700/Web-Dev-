@@ -279,6 +279,50 @@ display: none;
     }
 }
 
+/* dropdown for event */
+.dropdown{
+    display: inline-block;
+    color: white;
+    font-size: 1.5rem;
+}
+.dropdown:hover{
+    color: rgb(248, 194, 93);
+}
+
+.dropdown-content {
+    position: absolute;
+    background: rgba(135, 207, 235, 0.61);
+    border: 3px double rgb(248, 194, 93);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    transform: translateY(0px);
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s ease;
+}
+.dropdown-content a:hover {
+    background: rgba(91, 208, 255, 0.598);
+    color: rgb(227, 164, 49);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0);
+    font-weight: bolder;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+    transform: translateY(8px);
+}
+
+
+
+
 /* ***************************CONTACT-PAGE******************** */
 .contact_background {
     background:linear-gradient(rgba(0,0,0,0.6),rgba(0, 0, 0, 0.598)), url('img/wood-1759566_1280.jpg'); /* Replace with your image URL */
